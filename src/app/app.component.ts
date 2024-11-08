@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MetronomeComponent } from './metronome/metronome.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [MetronomeComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.less'
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'metronome-app';
+  // Lógica do componente principal
 }

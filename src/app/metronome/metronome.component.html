@@ -1,0 +1,12 @@
+<div class="metronome-container">
+    <h1>Metrônomo Musical</h1>
+
+    <label for="tempoInput">Tempo (BPM):</label>
+    <input type="number" id="tempoInput" [(ngModel)]="tempo" (change)="updateTempo()" aria-label="Tempo" />
+
+    <button (click)="startMetronome()" aria-label="Iniciar Metrônomo" accesskey="s">Iniciar</button>
+    <button (click)="stopMetronome()" aria-label="Parar Metrônomo" accesskey="p">Parar</button>
+    <button (click)="tapTempo()" aria-label="Tap Tempo" accesskey="t">Tap Tempo</button>
+
+    <div *ngIf="isPlaying" class="metronome-beat" aria-live="polite">Tic-Tac</div>
+</div>
